@@ -40,5 +40,5 @@ Product.propTypes = {
     if (!isValidWeight) {
       return new Error('The `weight` prop should range between 80 and 300.');
     }
-  }
+  },
 };
