@@ -31,5 +31,5 @@ Product.propTypes = {
         ' `' + componentName + '`. Validation failed.'
       );
     }
-  }.isRequired
+  }
 };
