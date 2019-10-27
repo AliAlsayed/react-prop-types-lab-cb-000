@@ -25,7 +25,7 @@ Product.propTypes = {
   hasWatermark: PropTypes.bool,
   color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired,
   weight: function(props, propName, componentName) {
-    if (props[propName] < 80 || props[propName] > 300) {
+    if (props[propName] < 80 || props[propName] > 300 || typeof props[propName] !== 'number'  ) {
       return new Error(
         'Invalid prop `' + propName + '` supplied to' +
         ' `' + componentName + '`. Validation failed.'
